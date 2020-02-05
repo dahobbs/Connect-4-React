@@ -164,16 +164,14 @@ export default class App extends React.Component{
                   }
               }
               if(boardState[i][j] !=="w"){
-                  if(boardState[i][j] === boardState[i][j] &&
-                      boardState[i][j] === boardState[i+1][j+1] &&
+                  if(boardState[i][j] === boardState[i+1][j+1] &&
                       boardState[i][j] === boardState[i+2][j+2]&&
                       boardState[i][j] === boardState[i+3][j+3]){
                           this.winMessage(boardState[i][j]);
                   }
               }
               if(boardState[i][j] !=="w"){
-                  if(boardState[i][j] === boardState[i][j] &&
-                      boardState[i][j] === boardState[i+1][j-1] &&
+                  if(boardState[i][j] === boardState[i+1][j-1] &&
                       boardState[i][j] === boardState[i+2][j-2]&&
                       boardState[i][j] === boardState[i+3][j-3]){
                           this.winMessage(boardState[i][j]);
