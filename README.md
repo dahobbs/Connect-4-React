@@ -1,4 +1,8 @@
-<<<<<<< HEAD
+# Connect-4-React
+A simple single page connect 4 game created to learn the react library
+
+### run `npm install` to get going  
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -68,6 +72,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 =======
-# Connect-4-React
-A simple connect 4 game created to learn the react library
->>>>>>> eba706808e11ee47aff90775fc03b954dd9eaaed
+
