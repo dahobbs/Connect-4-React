@@ -1,38 +1,84 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+body{
+  background-color: lightcoral;
+}
+table{
+  /* array as drawn in a table fills from left to right, rotate allows board to be filled 
+  from bottom to top*/
+  transform:rotate(270deg);
+  width:500px;
+  height:500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Blue{
+  fill:rgb(0, 17, 255);
+}
+.Yellow{
+  fill:gold;
+}
+.w{
+  fill:rgb(165, 223, 154);
+}
+rect#w:hover{
+  fill:darkseagreen;
+}
+.title{
+  color:cornsilk;
   text-align: center;
+  font-family: 'Fredoka One', cursive;
+  font-size: 3em;
+}
+.title>h2{
+  margin-bottom: 0px;
+  letter-spacing: 0.05em;
+}
+p.winMessage{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+}
+.currentPlayer{
+  color:cornsilk;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+.blueScore{
+  position:absolute;
+  font-family: 'Fredoka One', cursive;
+  background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,50,121,1) 51%, rgba(98,0,255,1) 100%);
+  -webkit-background-clip: text;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3em;
+  top:10%;
+  left:7%;
+  
+}
+.yellowScore{
+  position:absolute;
+  font-family: 'Fredoka One', cursive;
+  background: linear-gradient(90deg, rgba(238,170,7,1) 0%, rgba(244,246,25,1) 51%, rgba(155,186,34,1) 100%);
+  -webkit-background-clip: text;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3em;
+  top:10%;
+  right:7%;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media(max-width: 800px){
+  
+  svg,rect{
+  
+  width:40px;
+  height:40px;
+  
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  table{
+      width:270px;
+      height:270px;
   }
 }
